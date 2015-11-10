@@ -4,7 +4,7 @@ gulp = gulpHelp require 'gulp'
 rjs = require 'gulp-requirejs'
 coffee = require 'gulp-coffee'
 uglify = require 'gulp-uglify'
-clean = require 'gulp-clean'
+rimraf = require 'gulp-rimraf'
 
 configPath = require './config.coffee'
 
@@ -34,7 +34,7 @@ gulp.task 'build', 'Build project files', ['coffee'], ->
         .pipe gulp.dest configPath.target_path
 
     gulp.src configPath.temporary, read: no
-        .pipe do clean
+        .pipe do rimraf
 
 gulp.task 'coffee', 'Compile coffee scripts', ->
     gulp.src configPath.src
