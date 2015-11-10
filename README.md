@@ -7,7 +7,7 @@ Base skeleton for js application. Used gulp, coffee script and require Js.
 You need install node modules and bower comonents:
 
 ```bash
-node install
+npm install
 bower install
 ```
 
