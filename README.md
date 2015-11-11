@@ -4,11 +4,11 @@ Base skeleton for js application. Used gulp, coffee script and require Js.
 
 ### Install
 
-You need install node modules and bower comonents:
+You need install node modules and bower components:
 
 ```bash
-npm install
-bower install
+$ npm install
+$ bower install
 ```
 
 ### Use
@@ -16,7 +16,7 @@ bower install
 After install requeres (node & bower), need start gulp:
 
 ```bash
-gulp --require coffee-script/register
+$ gulp --require coffee-script/register
 ```
 
 Target 'defualt' watch compiled coffee script files and build to dist/main.js (path optional). Result is located in dist/main.js (path optional)
@@ -24,7 +24,7 @@ Target 'defualt' watch compiled coffee script files and build to dist/main.js (p
 Available targets list:
 
 ```bash
-gulp --require coffee-script/register help
+$ gulp --require coffee-script/register help
 ```
 
 Building config is located config.coffee
