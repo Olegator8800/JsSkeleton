@@ -30,9 +30,12 @@ $ gulp --require coffee-script/register help
 Building config is located config.coffee
 
 ```coffee
-src: './app/**/*.coffee' #Glob mask in to find *.coffee files
-temporary: 'tmp/' #Temporary directory
-target_path: 'dist' #Directory path for compiled files
-target_name: 'main.js' #Name for compiled application file located in target_path
-require_config: './app/require.config.coffee' #Path to config file for require Js
+path:
+    src: './app/**/*.coffee' #Glob mask in to find *.coffee files
+    temporary: 'tmp/' #Temporary directory
+    target_path: 'dist' #Directory path for compiled files
+    target_name: 'main.js' #Name for compiled application file located in target_path
+    require_config: './app/require.config.coffee' #Path to config file for require Js
+livereload:
+    ...
 ```
